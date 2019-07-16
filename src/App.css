@@ -1,3 +1,51 @@
 body{
-    font-family: 'Open Sans Condensed'
+    font-family: 'Cabin', sans-serif;
+    font-size: 10px;
 }
+
+/* a {
+    display: inline-block;
+    width: 25%;
+    text-decoration: none;
+    color: #333;
+  } */
+
+  a, a:visited {
+    text-decoration: none;
+    position: relative;
+    color: black;
+  }
+  .option:after, .option:visited:after {
+    content: '';
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    background: #F1570A;
+    transition: 0.2s;
+  }
+  .option:hover:after, .option:visited:hover:after {
+    width: 80%;
+    margin-left: 10%;
+    text-decoration: none;
+  }
+  .option.block, .option:visited.block {
+    display: block;
+    padding: 0.5em;
+  }
+  .option.block:hover, .option:visited.block:hover {
+    background: #eee;
+  }
+  
+  /* .option:hover {
+    margin-left: 25%;
+    height: .25rem;
+    width: 25%;
+    margin: 0;
+    background: #F1570A;
+    border: none;
+    transition: .3s ease-in-out;
+    font-weight: bold;
+    color: white;
+  } */

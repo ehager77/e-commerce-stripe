@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="356px" height="360px" viewBox="0 0 356 360" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.1 (67048) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 5</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-1725.000000, -1155.000000)" fill-rule="nonzero">
+            <g id="Group-5" transform="translate(1735.000000, 1165.000000)">
+                <g id="Group-4">
+                    <g id="Group-3">
+                        <ellipse id="Oval" stroke="#000000" stroke-width="20" fill="#000000" cx="168" cy="170" rx="168" ry="170"></ellipse>
+                        <circle id="Oval" fill="#20CBD8" cx="168" cy="62" r="15"></circle>
+                    </g>
+                    <g id="Group-2" transform="translate(94.000000, 93.000000)" fill="#FFFFFF">
+                        <g id="Group" transform="translate(0.000000, 27.000000)">
+                            <rect id="Rectangle" x="0" y="0" width="36" height="45"></rect>
+                            <rect id="Rectangle-Copy" x="0" y="73" width="36" height="45"></rect>
+                            <rect id="Rectangle" x="36" y="45" width="75" height="28"></rect>
+                        </g>
+                        <rect id="Rectangle" x="111" y="0" width="36" height="177"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

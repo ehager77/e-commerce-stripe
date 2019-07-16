@@ -1,0 +1,32 @@
+.header {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+  
+    .logo-container {
+      height: 100%;
+      width: 35px;
+      margin-top: 1.5%;
+      margin-left: 3%;
+    }
+  
+    .options {
+        font-family: 'Poppins', sans-serif;
+      width: 50%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      margin-right:2%;
+  
+      .option {
+        margin-top: 3%;
+        padding: 5px 15px;
+        text-decoration: none;
+        color: white;
+        font-size: 14px;
+      }
+    }
+  }
