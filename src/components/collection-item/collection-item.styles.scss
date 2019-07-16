@@ -1,28 +1,36 @@
+
 .collection-item {
     width: 22%;
     display: flex;
     flex-direction: column;
-    height: 350px;
+    height: 80%;
     align-items: center;
+
+    .action-area{
+      margin-bottom: 10px;
+    }
   
     .image {
       width: 100%;
-      height: 95%;
+      height:150px;
       background-size: cover;
       background-position: center;
-      margin-bottom: 5px;
+      margin-bottom:0px;
     }
   
     .collection-footer {
       width: 100%;
-      height: 5%;
+      height: 20px;
       display: flex;
       justify-content: space-between;
-      font-size: 18px;
+      font-size: 14px;
+      padding-top:15px;
+      padding-left: 7%;
+      padding-right: 7%;
+      padding-bottom: 11%;
   
       .name {
         width: 90%;
-        margin-bottom: 15px;
       }
   
       .price {
