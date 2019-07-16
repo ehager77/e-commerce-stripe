@@ -6,16 +6,16 @@ import './App.css';
 import HomePage from './pages/homepage/homepage.component';
 import ShopPage from './pages/shop/shop.component';
 import Header from './components/header/header.component'
-import Hero from './components/hero/hero.component';
+import SignUp from './pages/sign-up/sign-up.component'
 
 function App() {
   return (
     <div>
       <Header/>
-      <Hero/>
       <Switch>
         <Route exact path='/' component={HomePage}/>
         <Route path='/shop' component={ShopPage}/>
+        <Route path='/signup' component={SignUp}/>
       </Switch>
       
     </div>
