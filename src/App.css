@@ -3,6 +3,14 @@ body{
     font-size: 10px;
 }
 
+h2{
+  font-family: 'Abril Fatface', cursive;
+  font-size: 20px;
+  color: white;
+}
+
+
+
 /* a {
     display: inline-block;
     width: 25%;

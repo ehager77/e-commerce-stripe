@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import FormInput from '../../components/form-input/form-input.component';
+import CustomButton from '../../components/custom-button/custom-button.component';
 import './sign-in.styles.scss'
 
 class SignIn extends React.Component{
@@ -11,8 +13,9 @@ class SignIn extends React.Component{
     }
 
     handleSubmit = (event) =>{
+        console.log(event);
         event.preventDefault();
-        this.setState = {username:'', password:''}
+        this.setState({username:'', password:''})
     }
 
     handleChange = (event) =>{
@@ -25,27 +28,30 @@ class SignIn extends React.Component{
     render() {
         return(
             <div className='sign-in'>
-                <h2>I already have an account</h2>
-                <span>Sign in with your email/phone number and password</span>
+                <br/>
+                <h2 className='sign-in-text'>I already have an account</h2>
+                <p>Sign in with your email and password</p>
 
                 <form onSubmit={this.handleSubmit}>
-                    <label>Email/Phone Number</label>
-                    <input 
+                    <FormInput
                     name='username' 
-                    type='email' 
+                    type='email'
+                    label='username' 
                     value={this.state.username}
-                    onChange={this.handleChange}
+                    handleChange={this.handleChange}
                     required
                     />
-                    <label>Password</label>
-                    <input 
+                    <FormInput 
                     name='password' 
-                    type='password' 
+                    type='password'
+                    label='password' 
                     value={this.state.password}
-                    onChange={this.handleChange}
+                    handleChange={this.handleChange}
                     required
                     />
-                    <input type='submit' value='submit form'/>
+                    <CustomButton type='submit'>
+                    Sign In
+                    </CustomButton>
 
                 </form>
             

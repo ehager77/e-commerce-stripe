@@ -1,0 +1,22 @@
+.custom-button {
+    font-family: 'Poppins', sans-serif;
+    min-width: 165px;
+    width: auto;
+    height: 50px;
+    letter-spacing: 0.5px;
+    line-height: 50px;
+    padding: 0 35px 0 35px;
+    font-size: 16px;
+    background-color: transparent;
+    color: #F1570A;
+    text-transform: uppercase;
+    font-weight: bolder;
+    border: 2px solid #F1570A;
+    cursor: pointer;
+  
+    &:hover {
+      background-color: #F1570A;
+      color: white;
+      border: none;
+    }
+  }

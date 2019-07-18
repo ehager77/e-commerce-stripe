@@ -11,7 +11,6 @@ body, html {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
   // background-image:  url("../../assets/pathum-danthanarayana-kBY8uhuvnT8-unsplash.jpg");
   background: black;
-
   /* Set a specific height */
   width: 100%;
   height: 531px;
@@ -33,6 +32,7 @@ body, html {
 }
 
 .hero-btn{
+  margin-bottom: 5px;
   background-color: transparent;
   font-size: 12px;
   font-family: 'Poppins', sans-serif;
