@@ -17,7 +17,7 @@ const CollectionItem = ({ id, name, price, imageUrl }) => (
                 title='Card Image'
                 className='image' />
         </CardActionArea>
-            <CardContent classname='content'>
+            <CardContent className='content'>
                 <Typography color="textSecondary" component="p">
                     ${price}
                 </Typography>

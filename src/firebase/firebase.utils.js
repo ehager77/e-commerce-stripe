@@ -1,6 +1,6 @@
 import firebase from 'firebase/app';
 import 'firebase/firestore';
-import 'firebase/auth'
+import 'firebase/auth';
 
 const config = {
     
@@ -8,18 +8,37 @@ const config = {
         authDomain: "e-commerce-stripe.firebaseapp.com",
         databaseURL: "https://e-commerce-stripe.firebaseio.com",
         projectId: "e-commerce-stripe",
-        storageBucket: "e-commerce-stripe.appspot.com",
+        storageBucket: "",
         messagingSenderId: "586836983899",
         appId: "1:586836983899:web:c6861904622722e9"
 };
 
 export const createUserProfileDocument = async (userAuth, otherData) =>{
-        // console.log(userAuth);
         if(!userAuth) return;
+        console.log(userAuth);
+
         const userRef = firestore.doc(`users/${userAuth.uid}`);
-        const snapShot = await userRef.get();
+        console.log(userRef);
+        const snapShot = await userRef.get(); 
         console.log(snapShot);
-}
+
+        if(!snapShot.exists){
+                const {displayName, email} = userAuth;
+                const createdAt = new Date();
+
+                try{
+                        await userRef.set({
+                                displayName,
+                                email,
+                                createdAt,
+                                ... otherData
+                        })
+                } catch (err){
+                        console.log('error creating user', err.message)
+                }
+        }
+        return userRef
+};
 
 firebase.initializeApp(config);
 
