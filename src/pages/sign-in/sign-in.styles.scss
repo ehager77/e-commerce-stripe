@@ -1,10 +1,18 @@
+.sign-up-page{
+    width: 100%;
+    display: flex;
+    justify-content: flex;
+    padding-top: 10px;
+    background: black;
+}
+
 .sign-in{
     background-color: black;
     height: 100vw;
-    width: 100vw;
-    padding-top:2%;
-    padding-left: 2%;
-    padding-right: 2%;
+    width: 50vw;
+    padding-top:0%;
+    padding-left: 3%;
+    padding-right:10%;
 }
 p{
     font-size: 12px;
@@ -15,4 +23,5 @@ p{
 .buttons{
     display: flex;
     justify-content: space-between;
+    padding-right: 5%;
 }
