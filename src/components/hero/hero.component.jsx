@@ -29,7 +29,7 @@ const Hero = () => (
         </p>
       </Col>
       <Col md={4} lg={4}>
-        <section classname='my-photo'>
+        <section className='my-photo'>
           <img className="prof-pic" src={HeadShot}/>
         </section>
       </Col>

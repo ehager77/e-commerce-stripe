@@ -1,16 +1,14 @@
 .custom-button {
     font-family: 'Poppins', sans-serif;
     min-width: 165px;
-    width: auto;
+    white-space: normal;
     height: 50px;
     letter-spacing: 0.5px;
     line-height: 50px;
-    padding: 0 35px 0 35px;
-    font-size: 16px;
+    font-size: 14px;
     background-color: transparent;
     color: #F1570A;
     text-transform: uppercase;
-    font-weight: bolder;
     border: 2px solid #F1570A;
     cursor: pointer;
   
@@ -18,5 +16,24 @@
       background-color: #F1570A;
       color: white;
       border: none;
+      font-weight: bolder;
     }
+
+    &.google-sign-in{
+      background-color: transparent;
+      color: #4285f4;
+      border: 2px solid #4285f4;
+      width: 50%;
+      &:hover{
+        background-color: #4285f4;
+        color:white;
+        border: none;
+        font-weight: bolder;
+      }
+    }
+
+    // &:hover{
+    //   background-color: transparent;
+    //   border: #4285f4
+    // }
   }
