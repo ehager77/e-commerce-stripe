@@ -2,7 +2,7 @@
     width: 100%;
     display: flex;
     justify-content: flex;
-    padding-top: 10px;
+    padding-top: 15px;
     background: black;
 }
 
@@ -12,7 +12,7 @@
     width: 50vw;
     padding-top:0%;
     padding-left: 3%;
-    padding-right:10%;
+    padding-right:25%;
 }
 p{
     font-size: 12px;
@@ -22,6 +22,6 @@ p{
 
 .buttons{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex;
     padding-right: 5%;
 }
