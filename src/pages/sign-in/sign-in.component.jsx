@@ -60,7 +60,7 @@ class SignIn extends React.Component {
                     </form>
                     <div className='buttons'>
                             <CustomButton onClick={this.handleSubmit} type='submit'>Sign In</CustomButton>
-                            <CustomButton onClick={signInWithGoogle} isGoogleSignIn style={{'margin-left': '10%', 'height':'100%'}}>
+                            <CustomButton onClick={signInWithGoogle} isGoogleSignIn style={{'marginLeft': '10%', 'height':'100%'}}>
                                 {' '}Sign In With Google{''}
                             </CustomButton>
                         </div>
