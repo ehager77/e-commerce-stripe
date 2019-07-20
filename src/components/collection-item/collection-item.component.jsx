@@ -4,19 +4,21 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
+import CustomButton from '../custom-button/custom-button.component';
+import {connect} from 'react-redux';
+import {addItem} from '../../redux/cart/cart.actions';
 
 import './collection-item.styles.scss'
-import { CardActionArea } from '@material-ui/core';
 
-const CollectionItem = ({ id, name, price, imageUrl }) => (
+const CollectionItem = ({ item, addItem }) => {
+    const { name, price, imageUrl} = item;
+    return(
     <Card className='collection-item'>
-        <CardActionArea className='action-area'>
             <CardMedia
                 component="img"
                 src={imageUrl}
                 title='Card Image'
                 className='image' />
-        </CardActionArea>
             <CardContent className='content'>
                 <Typography color="textSecondary" component="p">
                     ${price}
@@ -26,11 +28,13 @@ const CollectionItem = ({ id, name, price, imageUrl }) => (
                 </Typography>
             </CardContent>
             <CardActions className='collection-footer'>
-                <button className='hero-btn' size="small" color="primary">
-                    Buy
-            </button>
+            <CustomButton onClick ={()=> addItem(item)} inverted>Add to Cart</CustomButton>
             </CardActions>
     </Card>
-)
+)};
 
-export default CollectionItem
+const mapDispatchToProps = dispatch =>({
+    addItem: item => dispatch(addItem(item))
+})
+
+export default connect(null, mapDispatchToProps)(CollectionItem);
