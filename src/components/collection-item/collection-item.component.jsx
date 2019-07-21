@@ -1,12 +1,15 @@
 import React from 'react';
+import {connect} from 'react-redux';
+
+
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import CustomButton from '../custom-button/custom-button.component';
-import {connect} from 'react-redux';
 import {addItem} from '../../redux/cart/cart.actions';
+
 
 import './collection-item.styles.scss'
 
@@ -16,7 +19,7 @@ const CollectionItem = ({ item, addItem }) => {
     <Card className='collection-item'>
             <CardMedia
                 component="img"
-                src={imageUrl}
+                src={`${imageUrl}`}
                 title='Card Image'
                 className='image' />
             <CardContent className='content'>
@@ -28,7 +31,9 @@ const CollectionItem = ({ item, addItem }) => {
                 </Typography>
             </CardContent>
             <CardActions className='collection-footer'>
-            <CustomButton onClick ={()=> addItem(item)} inverted>Add to Cart</CustomButton>
+            <CustomButton onClick ={()=> addItem(item)} inverted>
+            Add to Cart
+            </CustomButton>
             </CardActions>
     </Card>
 )};
