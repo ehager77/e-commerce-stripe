@@ -1,10 +1,10 @@
-$sub-color: white;
-$main-color: #F1570A;
+$sub-color: red;
+$main-color: black;
 
 @mixin shrinkLabel {
   top: -14px;
   font-size: 10px;
-  color: $main-color;
+  color: $sub-color;
 }
 
 .group {
@@ -14,7 +14,7 @@ $main-color: #F1570A;
   .form-input {
     background: none;
     background-color: transparent;
-    color: $main-color;
+    color: black;
     font-size: 12px;
     padding: 10px 10px 10px 5px;
     display: block;
@@ -40,7 +40,7 @@ $main-color: #F1570A;
 
   .form-input-label {
     font-family: 'Poppins', sans-serif;
-    color: $sub-color;
+    color: $main-color;
     font-size: 13px;
     font-weight: normal;
     position: absolute;
