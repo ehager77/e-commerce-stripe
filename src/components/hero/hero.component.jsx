@@ -11,18 +11,18 @@ const Hero = () => (
   <Jumbotron className='hero-image'>
     <Row className='jumbo-row'>
       <Col md={8} lg={8}>
-        <h1>Hello, world!</h1>
+        <h1>Welcome To My Store</h1>
         <p className='hero-text'>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-        It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+        I was built with React, Redux and a Firebase 'back-end'.  
+        I can also accept payments via Stripe's API.
+        Please click 'Sign Up' to get started or browse the site with the directory below. 
         </p>
         <br />
         <br />
         <p>
           <MuiThemeProvider theme={theme}>
             <button className='hero-btn'>
-              <a href='/shop'><span>Shop Now</span></a>
+              <a href='/signin'><span>Sign Up</span></a>
             </button>
           </MuiThemeProvider>
         </p>
