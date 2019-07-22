@@ -9,6 +9,7 @@ import './directory.styles.scss';
 
 
 const Directory = ({sections}) => (
+
     <div className='directory-menu'>
         {
             // this.state.sections.map(({title, imageUrl, id, size, linkUrl}) =>(

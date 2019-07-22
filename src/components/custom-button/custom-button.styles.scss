@@ -7,15 +7,15 @@
     line-height: 45px;
     font-size: 14px;
     background-color: transparent;
-    color: #F1570A;
+    color: red;
     text-transform: uppercase;
-    border: 2px solid #F1570A;
+    border: 2px solid red;
     cursor: pointer;
     display: flex;
     justify-content: center;
   
     &:hover {
-      background-color: #F1570A;
+      background-color: red;
       color: white;
       border: none;
       font-weight: bolder;
@@ -40,14 +40,14 @@
     // }
 
     .inverted{
-      background-color: #F1570A;
+      background-color: red;
       color: white;
       border: none;
       font-weight: bolder;
     }
     &:hover{
-      background:  #F1570A;
+      background:  red;
       color: white;
-      border: 2px solid  #F1570A;
+      border: 2px solid  red;
     }
   }

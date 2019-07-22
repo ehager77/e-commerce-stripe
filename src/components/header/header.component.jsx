@@ -5,7 +5,7 @@ import { createStructuredSelector } from 'reselect';
 
 import './header.styles.scss';
 import firebase from 'firebase';
-import { ReactComponent as Logo } from '../../assets/mylogo-white.svg';
+import { ReactComponent as Logo } from '../../assets/logo-red.svg';
 import CartIcon from '../cart-icon/cart-icon.component';
 import CartDropdown from '../cart-dropdown/cart-dropdown.component';
 import { selectCartHidden} from '../../redux/cart/cart.selectors';
@@ -20,20 +20,15 @@ const Header = ({ currentUser, hidden }) => (
         </Link>
         <div className='options'>
             <Link className='option' id='one' to='/shop'>
-                my work.
+                shop.
         </Link>
-            <Link className='option' id="two" to='/shop'>
-                about me.
-        </Link>
-            <Link className='option' id="three" to='/shop'>
-                resume.
-        </Link>
+            
         {currentUser ?(
             <Link className='option left'  onClick={() => firebase.auth().signOut()} to='/'>sign out.</Link>
             ) : (
             <Link className='option left' to='/signin'>sign in.</Link>
             )}
-            <CartIcon/>
+            <CartIcon className='cart-icon'/>
         </div>
         {
             hidden ?

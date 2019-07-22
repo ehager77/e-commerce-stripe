@@ -4,7 +4,6 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col';
 import MuiThemeProvider from "@material-ui/core/styles/MuiThemeProvider";
 import './hero.styles.scss';
-import HeadShot from '../../assets/headshot.svg';
 import theme from '../../theme';
 
 const Hero = () => (
@@ -23,15 +22,10 @@ const Hero = () => (
         <p>
           <MuiThemeProvider theme={theme}>
             <button className='hero-btn'>
-              Get in Touch
+              <a href='/shop'><span>Shop Now</span></a>
             </button>
           </MuiThemeProvider>
         </p>
-      </Col>
-      <Col md={4} lg={4}>
-        <section className='my-photo'>
-          <img className="prof-pic" src={HeadShot}/>
-        </section>
       </Col>
     </Row>
   </Jumbotron>

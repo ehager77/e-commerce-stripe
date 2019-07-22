@@ -33,7 +33,7 @@ h2{
     bottom: 0;
     left: 0;
     width: 0%;
-    background: #F1570A;
+    background: red;
     transition: 0.2s;
   }
   .option:hover:after, .option:visited:hover:after {
